@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_x="233dp"
             android:layout_y="216dp"
-            android:text="Status"
+            android:text="View"
             android:textAlignment="center"
             android:textSize="20dp" />
 
@@ -83,7 +83,7 @@
             android:layout_height="105dp"
             android:layout_x="47dp"
             android:layout_y="266dp"
-            app:srcCompat="@drawable/history" />
+            app:srcCompat="@drawable/delete" />
 
         <TextView
             android:id="@+id/textView3"
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_x="67dp"
             android:layout_y="377dp"
-            android:text="History"
+            android:text="Remove"
             android:textAlignment="center"
             android:textSize="20dp" />
 

@@ -18,6 +18,9 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         setTitle(R.string.title_activity_login);
 
+//        dbHelp db=new dbHelp(this);
+//        db.insertRole();
+
         this.arraySpinner = new String[] {
                 "1", "2", "3"
         };

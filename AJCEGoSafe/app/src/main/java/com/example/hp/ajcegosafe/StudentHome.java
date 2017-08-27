@@ -32,7 +32,8 @@ public class StudentHome extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final LinearLayout linearLayout = (LinearLayout) findViewById(R.id.Linear_layout);
+        final LinearLayout linearLayout = (LinearLayout) findViewById(R.id.Linear_layout
+        );
         final LinearLayout linearLayout2 = (LinearLayout) findViewById(R.id.Linear_layout2);
         final LinearLayout linearLayout3 = (LinearLayout) findViewById(R.id.Linear_layout3);
         final LinearLayout linearLayout4 = (LinearLayout) findViewById(R.id.Linear_layout4);
@@ -187,7 +188,8 @@ public class StudentHome extends AppCompatActivity
         } else if (id == R.id.nav_notifications) {
 
         } else if (id == R.id.nav_settings) {
-
+            Intent intent = new Intent(StudentHome.this, StudentSettings.class);
+            startActivity(intent);
         } else if (id == R.id.nav_about) {
 
         } else if (id == R.id.nav_help) {

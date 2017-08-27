@@ -17,6 +17,50 @@ public class AdminHome extends AppCompatActivity {
         setTitle(R.string.Admin_home);
 
         final LinearLayout linearLayout4 = (LinearLayout) findViewById(R.id.Linear_layout4);
+        final LinearLayout linearLayout3 = (LinearLayout) findViewById(R.id.Linear_layout3);
+        final LinearLayout linearLayout2 = (LinearLayout) findViewById(R.id.Linear_layout2);
+
+        linearLayout2.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View arg0, MotionEvent arg1) {
+                if (arg1.getAction()==MotionEvent.ACTION_DOWN){
+                    linearLayout2.setBackgroundResource(R.drawable.rounded_edges_pressed);
+                    linearLayout2.setPadding(10, 10, 10, 10);
+                    layoutpressed = arg0.getId();
+                }
+                else if (arg1.getAction()== MotionEvent.ACTION_UP){
+                    linearLayout2.setBackgroundResource(R.drawable.rounded_edges_normal);
+                    linearLayout2.setPadding(10, 10, 10, 10);
+                    if(layoutpressed == arg0.getId()){
+                        Intent intent = new Intent(AdminHome.this, AllStudents .class);
+                        startActivity(intent);
+                    }
+                }
+
+                return true;
+            }
+        });
+
+        linearLayout3.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View arg0, MotionEvent arg1) {
+                if (arg1.getAction()==MotionEvent.ACTION_DOWN){
+                    linearLayout3.setBackgroundResource(R.drawable.rounded_edges_pressed);
+                    linearLayout3.setPadding(10, 10, 10, 10);
+                    layoutpressed = arg0.getId();
+                }
+                else if (arg1.getAction()== MotionEvent.ACTION_UP){
+                    linearLayout3.setBackgroundResource(R.drawable.rounded_edges_normal);
+                    linearLayout3.setPadding(10, 10, 10, 10);
+                    if(layoutpressed == arg0.getId()){
+                        Intent intent = new Intent(AdminHome.this, StudentDelete.class);
+                        startActivity(intent);
+                    }
+                }
+
+                return true;
+            }
+        });
 
         linearLayout4.setOnTouchListener(new View.OnTouchListener() {
             @Override

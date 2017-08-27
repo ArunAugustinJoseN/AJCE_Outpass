@@ -34,6 +34,10 @@ public class StudentOutpass extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_outpass);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setTitle(R.string.Student_outpass);
+        // OR You can also use the line below
+        // setTitle("MyTitle")
+
 
 
         ImageView ib = (ImageView)findViewById(R.id.imageView);
@@ -52,9 +56,6 @@ public class StudentOutpass extends AppCompatActivity {
                 else if (arg1.getAction()== MotionEvent.ACTION_UP){
                     linearLayout.setBackgroundResource(R.drawable.rounded_edges_normal);
                     linearLayout.setPadding(10, 10, 10, 10);
-//                    if(layoutpressed == arg0.getId()){
-//
-//                    }
                 }
 
                 return true;
@@ -64,17 +65,11 @@ public class StudentOutpass extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showDialog(DATE_DIALOG_ID);
+                fromupdateDisplay();
             }
         });
 
-        final Calendar c = Calendar.getInstance();
-        sYear = c.get(Calendar.YEAR);
-        sMonth = c.get(Calendar.MONTH);
-        sDay = c.get(Calendar.DAY_OF_MONTH);
 
-
-        // display the current date
-        fromupdateDisplay();
 
         linearLayout2.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -87,10 +82,6 @@ public class StudentOutpass extends AppCompatActivity {
                 else if (arg1.getAction()== MotionEvent.ACTION_UP){
                     linearLayout2.setBackgroundResource(R.drawable.rounded_edges_normal);
                     linearLayout2.setPadding(10, 10, 10, 10);
-//                    if(layoutpressed == arg0.getId()){
-//                        Intent intent = new Intent(StudentOutpass.this, DatePick.class);
-//                        startActivity(intent);
-//                    }
                 }
 
                 return true;
@@ -100,22 +91,20 @@ public class StudentOutpass extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showDialog(END_DATE_DIALOG_ID);
+                toupdateDisplay();
+
             }
         });
 
-        final Calendar c1 = Calendar.getInstance();
-        eYear = c1.get(Calendar.YEAR);
-        eMonth = c1.get(Calendar.MONTH);
-        eDay = c1.get(Calendar.DAY_OF_MONTH);
+//        final Calendar c1 = Calendar.getInstance();
+//        eYear = c1.get(Calendar.YEAR);
+//        eMonth = c1.get(Calendar.MONTH);
+//        eDay = c1.get(Calendar.DAY_OF_MONTH);
 
 
         // display the current date
-        toupdateDisplay();
 
 
-        setTitle(R.string.Student_outpass);
-        // OR You can also use the line below
-        // setTitle("MyTitle")
 
 
     }

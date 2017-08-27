@@ -37,7 +37,9 @@
         <activity android:name=".StudentRegistration" />
         <activity android:name=".CourseStream" />
         <activity android:name=".StudentProfile" />
-        <activity android:name=".StudentDelete"></activity>
+        <activity android:name=".StudentDelete" />
+        <activity android:name=".StudentSettings" />
+        <activity android:name=".AllStudents"></activity>
     </application>
 
 </manifest>

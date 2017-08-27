@@ -13,6 +13,8 @@
     <string name="Course_streams">Streams</string>
     <string name="Student_registration">Registration</string>
     <string name="Student_profile">Profile</string>
+    <string name="Student_remove">Remove Student</string>
+    <string name="Student_settings">Settings</string>
 
 
 </resources>

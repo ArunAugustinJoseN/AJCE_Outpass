@@ -3,18 +3,15 @@ package com.example.hp.ajcegosafe;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ImageView;
 
-public class StudentProfile extends AppCompatActivity {
+public class StudentSettings extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_profile);
-        setTitle(R.string.Student_profile);
+        setContentView(R.layout.activity_student_settings);
+        setTitle(R.string.Student_settings);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        ImageView myImage = (ImageView) findViewById(R.id.imageView);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
