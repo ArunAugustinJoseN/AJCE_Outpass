@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.ajcegosafe.StudentOutpass">
+
+    <LinearLayout
+        android:id="@+id/Linear_layout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="40dp"
+        android:layout_y="107dp"
+        android:clickable="true">
+
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_x="-19dp"
+            android:layout_y="97dp"
+            android:paddingTop="15dp"
+            android:text="Date of Leaving"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_x="257dp"
+            android:layout_y="109dp"
+            app:srcCompat="@drawable/cul" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear_layout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="40dp"
+        android:layout_y="197dp"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_x="50dp"
+            android:layout_y="193dp"
+            android:ems="10"
+            android:hint="Date of Return"
+            android:inputType="date"
+            android:paddingTop="15dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_x="277dp"
+            android:layout_y="179dp"
+            app:srcCompat="@drawable/cul" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_x="41dp"
+        android:layout_y="295dp"
+        android:ems="10"
+        android:hint="Purpose"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:textSize="20sp"
+        android:digits="qwertzuiopasdfghjklyxcvbnm QWERTYUIOPASDFGHJKLZXCVBNM0123456789,"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_x="65dp"
+        android:layout_y="416dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Submit"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_x="45dp"
+        android:layout_y="24dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light" />
+
+</AbsoluteLayout>
