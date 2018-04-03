@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/absLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.ajcegosafe.StudentOutpassStatus">
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="399dp"
+        android:layout_height="561dp"
+        android:layout_x="-8dp"
+        android:layout_y="-5dp"
+        android:paddingLeft="130dp"
+        android:paddingTop="270dp"
+        android:textSize="35sp" />
+</AbsoluteLayout>
